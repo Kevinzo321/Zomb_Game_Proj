@@ -21,6 +21,16 @@ public class PlayerController : MonoBehaviour
 
     void Start() //add
     {
+        if(GameController.instance.gamePlaying)
+        {
+            
+        }
+        else
+        {
+            movement = Vector2.zero; // fix
+            mousePos = Vector2.zero; // fix
+        }
+
         canShoot = true; //add    
     }
 

@@ -14,6 +14,7 @@ public class ZombieDController : MonoBehaviour
 
             if(hitPoints <= 0)
             {
+                GameController.instance.SlayZomb();
                 Destroy(gameObject);
             }
         }
